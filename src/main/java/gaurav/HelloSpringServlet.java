@@ -7,12 +7,13 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-// Basically this is a Servlet class we are using to respond to request.
-@WebServlet("/helloworld")
-public class HelloWorldServlet extends HttpServlet {
+
+@WebServlet("/learnSpring")
+public class HelloSpringServlet extends HttpServlet {
     public void service(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        PrintWriter printWriter = response.getWriter();
-        printWriter.write("Hello World");
-        printWriter.close();
+        PrintWriter printer = response.getWriter();
+        printer.write("This is first step to learn Spring");
+        printer.close();
+
     }
 }
