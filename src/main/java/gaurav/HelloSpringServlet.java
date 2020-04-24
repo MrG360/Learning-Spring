@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 
-@WebServlet("/learnSpring")
+@WebServlet("/helloSpring")
 public class HelloSpringServlet extends HttpServlet {
     public void service(HttpServletRequest request, HttpServletResponse response) throws IOException {
         PrintWriter printer = response.getWriter();

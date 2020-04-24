@@ -15,15 +15,21 @@
     </parent>
 
     <dependencies>
+
+<!--        This is used to add Springboot framwork to the project-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+
+        <!--Thymeleaf is a templating engine that allows you to write the view using HTML
+        and also provides you with a view resolver -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
         </dependency>
 
+<!--        Jasper is Tomcat's JSP engine. Compiles JSP to Java code.-->
         <dependency>
             <groupId>org.apache.tomcat.embed</groupId>
             <artifactId>tomcat-embed-jasper</artifactId>
