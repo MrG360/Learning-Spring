@@ -10,8 +10,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class HelloWorldController {
 
     @RequestMapping("/helloSpring")
-    // uses this url to bind to the method
-    // to the particular controller according to the dispatcher servlet
     //This annotation is used to tell the Spring (dispatcher servlet and handler mapping classes)
     // that the controller method is mapped to a specific URL.
     @ResponseBody
@@ -23,9 +21,11 @@ public class HelloWorldController {
 
     // We don't require @ResponseBody
     //Because we are retuning index.html file
+    //Id ResponseBody was used then only index would have been printed.
     @RequestMapping("/helloSpringMVC")
     public String helloSpringMVC(){
-        return "index"; // It searches for index.html file itself
-                        //because of the thymeleaf dependency
+        return "index";
+        // It searches for index.html file itself
+        //because of the thymeleaf dependency
     }
 }
